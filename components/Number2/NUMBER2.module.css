@@ -1,0 +1,250 @@
+#main nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 3px 5px 3px;
+}
+
+#left_title {
+    flex: .9;
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+#center_paragraph {
+    flex: 2;
+    text-align: center;
+    font-size: 11px;
+}
+
+#right_div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#right_div button {
+    background-color: silver;
+    padding: 5px;
+    display: grid;
+    place-content: center;
+    height: 28px;
+    font-size: 11px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+#right_div div {
+    width: 50px;
+    height: 50px;
+    border: solid 1px silver;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+#right_div div section {
+    width: 28px;
+    height: 2px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 3px;
+}
+
+#left_title {
+    padding-left: 6px;
+}
+
+#second_block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#second_block span:nth-child(1) {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+#second_block span:nth-child(2) {
+    display: flex;
+    gap: 11px;
+    align-items: center;
+}
+
+#second_block span:nth-child(2) button {
+    border: solid 1px rgb(207, 205, 205);
+    padding: 1px 5px 1px 5px;
+    border-radius: 5px;
+}
+
+#second_block span:nth-child(2) select {
+    background-color: black;
+    padding: 3px;
+    color: white;
+}
+
+#message_line {
+    width: 6px;
+    height: 14px;
+    background-color: grey;
+    transform: rotate(45deg);
+    position: relative;
+    top: 9px;
+    right: 6px;
+    border-bottom-left-radius: 101px;
+    border-bottom-right-radius: 101px;
+}
+
+#message {
+    background-color: grey;
+    padding: 3px 9px 3px 5px;
+    border-radius: 22px;
+    color: white;
+    font-size: 9px;
+    display: flex;
+}
+
+#second_block p {
+    font-size: 7px;
+}
+
+#third_block {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: aliceblue;
+}
+
+#third_block_first_div {
+    flex: 2;
+    padding: 1% 1% 1% 11%;
+}
+
+#third_block_first_div_inner_div {
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+}
+
+.third_block_first_div_inner_div_component {
+    border: solid 1px silver;
+    display: grid;
+    place-items: center;
+    gap: 11px;
+    height: 280px;
+    padding: 11px;
+    width: 220px;
+}
+
+#third_block_second_div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9vh;
+    gap: 11px;
+    flex-wrap: wrap;
+}
+
+.third_block_second_div_first_div {
+    background: url("/gallery/ydt.jpg");
+    width: 200px;
+    height: 150px;
+}
+
+
+.popular_div {
+    position: relative;
+    bottom: 1.7rem;
+    left: 0rem;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    border-radius: 11px;
+    color: white;
+    width: 120px;
+    line-height: 29px;
+}
+
+.third_block_first_div_inner_div_component h2 {
+    font-weight: bolder;
+}
+
+.para_span {
+    font-size: 11px;
+}
+
+#main footer {
+    padding: 12px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#main footer ul {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 4px;
+
+}
+
+@media only screen and (max-width:599px) {
+    #main nav {
+        padding: 5px 0px 5px 22px;
+    }
+
+    #right_div {
+        flex-direction: column-reverse;
+        gap: 22px;
+    }
+
+    #right_div button {
+        position: absolute;
+        top: 71px;
+        border-radius: 0;
+    }
+
+    #second_block {
+        position: relative;
+        top: 50px;
+        padding: 3px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:1018px) {
+    #third_block {
+        flex-direction: column;
+        padding: 70px 1px 1px 1px;
+    }
+
+    #third_block_first_div {
+        padding: 3px;
+    }
+
+    #third_block_first_div_inner_div {
+        flex-direction: column;
+    }
+
+    #third_block_second_div {
+        flex-direction: row;
+        padding: 22px;
+        gap: 33px;
+    }
+
+    #arr {
+        display: none;
+    }
+}

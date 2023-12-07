@@ -1,0 +1,115 @@
+#main {
+    width: 100%;
+    height: 100vh;
+    background-image: url('/gallery/airplane-4885803_1280.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#main_first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 450px 0px;
+}
+
+#main_first h1 {
+    flex: 1.4;
+    font-size: 151px;
+    text-align: center;
+    animation: linear 1s h1_ forwards;
+}
+
+@keyframes h1_ {
+    0% {
+        transform: rotate(20deg);
+        opacity: .6;
+    }
+
+    100% {
+        transform: rotate(0deg);
+        opacity: 1;
+        background-color: black;
+        color: white;
+    }
+}
+
+#main_first_btn_div {
+    display: grid;
+    gap: 70px;
+    flex: 2;
+}
+
+#main_first_btn_div_links {
+    display: flex;
+    justify-content: center;
+    gap: 11px;
+}
+
+#main_first_btn_div_paragraph {
+    font-size: 30px;
+    text-align: center;
+}
+
+#main_second {
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 1px silver;
+}
+
+#main_second_btn_div {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#main_second_btn_div button {
+    background-color: rgba(0, 0, 0, 0.74);
+    color: silver;
+    padding: 5px;
+}
+
+#ab_ {
+    display: flex;
+    gap: 22px;
+    padding-left: 3%;
+}
+
+#ab_ div {
+    font-size: 11px;
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    color: rgb(53, 50, 50);
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+}
+
+
+@media only screen and (max-width:868px) {
+    #main_first {
+        flex-direction: column-reverse;
+        gap: 5rem;
+    }
+
+    #main_first_btn_div {
+        gap: 24px;
+    }
+
+    #main_first_btn_div_paragraph {
+        padding-left: 0;
+    }
+
+    #main_first h1 {
+        font-size: 121px;
+    }
+}

@@ -1,0 +1,70 @@
+#main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/gallery/gif_first.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+#main nav {
+    border-bottom: solid 1px white;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    padding-left: 16%;
+    line-height: 50px;
+}
+
+#main nav span:nth-child(1) {
+    font-size: 38px;
+}
+
+#main nav span:nth-child(2) {
+    font-size: 22px;
+}
+
+#main div {
+    padding: 200px;
+    display: grid;
+    gap: 130px;
+}
+
+#main div button {
+    background-color: rgb(31, 28, 28);
+    width: 202px;
+    padding: 11px;
+    border-radius: 5px;
+    border: solid 1px rgb(31, 28, 28);
+    color: white;
+    font-size: 13px;
+}
+
+#main div button:hover {
+    border: solid 1px rgb(61, 57, 57);
+    background-color: rgb(61, 57, 57);
+}
+
+#main div section {
+    display: grid;
+    gap: 12px;
+}
+
+#main div section h1 {
+    font-size: 55px;
+    color: white;
+}
+
+#main div section p {
+    color: white;
+}
+
+@media only screen and (max-width:768px) {
+    #main div {
+        padding: 22px 22px 101px 22px;
+        gap: 180px;
+    }
+}
