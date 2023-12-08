@@ -24,8 +24,10 @@
     border: solid 2px white;
     margin: auto;
     border-radius: 50%;
-    display: grid;
-    place-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
 }
 
 #main form {
