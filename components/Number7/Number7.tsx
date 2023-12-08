@@ -3,6 +3,7 @@ import React from 'react'
 import styles from "./Number7.module.css"
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { HeadProvider, Title, Meta } from 'react-head';
 
 export default function Number7() {
     const [dataTemp, setDataTemp] = useState(""),
@@ -59,8 +60,13 @@ export default function Number7() {
     useEffect(() => {
         getData()
     }, [])
+
     return (
         <main id={styles.main}>
+            <HeadProvider>
+                <Title>Temperature</Title>
+                <Meta name="example" content="whatever" />
+            </HeadProvider>
             <h1>Temperature</h1>
             <div id={styles.temp}>
                 <span>{dataTemp}</span> <span style={{ display: `${dataTemp ? "block" : "none"}` }}>&deg;C</span>
