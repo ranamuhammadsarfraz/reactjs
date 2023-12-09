@@ -1,14 +1,10 @@
 import styles from "./NUMBER1.module.css"
 import { GiPencilBrush } from 'react-icons/gi';
-import { HeadProvider, Title, Meta } from 'react-head';
 
 export default function Number_1() {
     return (
         <>
             <main id={styles.main}>
-                <HeadProvider>
-                    <Title>Two Horn Horse</Title>
-                </HeadProvider>
                 <nav>
                     <span>
                         <GiPencilBrush />

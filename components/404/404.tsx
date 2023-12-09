@@ -1,7 +1,6 @@
 "use client"
 import React from 'react'
 import styles from "./404.module.css"
-import { HeadProvider, Title, Meta } from 'react-head';
 
 export default function Custom404() {
     interface dC_t {
@@ -18,10 +17,6 @@ export default function Custom404() {
     }
     return (
         <div id={styles.main}>
-            <HeadProvider>
-                <Title>{dataCenter.title}</Title>
-                <Meta name={dataCenter.status} content={dataCenter.desc} />
-            </HeadProvider>
             <h1>{dataCenter.h1}</h1>
             <p>{dataCenter.status}</p>
         </div>

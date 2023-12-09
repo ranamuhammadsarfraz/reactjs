@@ -1,7 +1,6 @@
 "use client"
 import { useState } from "react"
 import Link from "next/link"
-import { HeadProvider, Title, Meta } from 'react-head';
 import styles from "./index.module.css"
 
 const pL = [
@@ -35,10 +34,6 @@ export default function Page() {
   return (
     <>
       <main id={styles.main}>
-        <HeadProvider>
-          <Title>NextJs Practice</Title>
-          < Meta name="example" content="whatever" />
-        </HeadProvider>
         <div id={styles.inner_div}>
           <h1>NextJs Projects</h1>
           <section id={styles.inner_section}>
