@@ -61,23 +61,25 @@ export default function Number7() {
         getData()
     }, [])
 
+    const dataCenter: [string, string, string, string] = ["Temperature", "search", "https://rmsencode.com", "Developed by R.M.Sarfraz"]
+
     return (
         <main id={styles.main}>
             <HeadProvider>
-                <Title>Temperature</Title>
-                <Meta name="example" content="whatever" />
+                <Title>{dataCenter[0]}</Title>
+                <Meta name={dataCenter[0]} content={dataCenter[0]} />
             </HeadProvider>
-            <h1>Temperature</h1>
+            <h1>{dataCenter[0]}</h1>
             <div id={styles.temp}>
-                <span>{dataTemp}</span> <span style={{ display: `${dataTemp ? "block" : "none"}` }}>&deg;C</span>
+                <span>{dataTemp}</span><span style={{ display: `${dataTemp ? "block" : "none"}` }}>&deg;C</span>
             </div>
             <p>{dataTemp && city.toUpperCase()}</p>
             <form onSubmit={postData}>
                 <input onChange={(c) => setInputValue(c.target.value)} placeholder="Enter city" type="text" required />
-                <button>search</button>
+                <button>{dataCenter[1]}</button>
             </form>
             <p>{alert}</p>
-            <Link href="https://rmsencode.com">Developed by R.M.Sarfraz</Link>
+            <Link href={dataCenter[2]}>{dataCenter[3]}</Link>
         </main>
     )
 }
