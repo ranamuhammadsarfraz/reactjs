@@ -3,6 +3,7 @@ import React from 'react'
 import Image from "next/image"
 import { AiOutlineUpload } from 'react-icons/ai';
 import Link from "next/link";
+import { HeadProvider, Title, Meta } from 'react-head';
 
 export default function Number_2() {
     const arrayLine = [
@@ -49,6 +50,9 @@ export default function Number_2() {
     return (
         <>
             <main id={styles.main}>
+                <HeadProvider>
+                    <Title>Price Table</Title>
+                </HeadProvider>
                 <nav>
                     <div id={styles.left_title}>
                         <span id={styles.left_title_first_span}>

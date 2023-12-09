@@ -51,6 +51,8 @@
 #main div section {
     display: grid;
     gap: 12px;
+    background-color: rgba(37, 37, 37, 0.288);
+    padding: 11px;
 }
 
 #main div section h1 {

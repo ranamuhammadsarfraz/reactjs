@@ -1,0 +1,40 @@
+#main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/animation/2023/03/31/01/32/01-32-38-664_512.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    color: white;
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+#inner_div {
+    display: grid;
+    gap: 93px;
+}
+
+#inner_div h1 {
+    font-size: 50px;
+}
+
+#inner_section {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(20, 20, 20, 0.507);
+    padding: 11px;
+    gap: 6px;
+}
+
+#inner_section a:hover {
+    font-size: 22px;
+    transition: 2s;
+    opacity: .6;
+}
+
+#inner_section a:hover {
+    opacity: 1;
+}

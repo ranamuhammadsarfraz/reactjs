@@ -142,9 +142,10 @@
     display: grid;
     place-items: center;
     gap: 11px;
-    height: 280px;
+    height: 390px;
     padding: 11px;
-    width: 220px;
+    width: 360px;
+    margin-top: 33px;
 }
 
 #third_block_second_div {

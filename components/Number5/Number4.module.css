@@ -10,7 +10,6 @@
 #main section {
     width: 650px;
     height: 650px;
-    /* background-color: red; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -71,5 +70,11 @@
 
     100% {
         border: solid 13px rgba(192, 192, 192, 0.753);
+    }
+}
+
+@media only screen and (max-width:668px) {
+    #main section {
+        display: none;
     }
 }

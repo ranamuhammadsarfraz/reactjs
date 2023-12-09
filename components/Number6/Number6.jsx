@@ -2,10 +2,14 @@ import React from 'react'
 import { FaPersonArrowUpFromLine } from "react-icons/fa6"
 import styles from "./Number6.module.css"
 import { FaArrowDown } from "react-icons/fa";
+import { HeadProvider, Title, Meta } from 'react-head';
 
 export default function Number6() {
     return (
         <div id={styles.whole_page}>
+            <HeadProvider>
+                <Title>Clerk Price Plan</Title>
+            </HeadProvider>
             <Nav />
             <div id={styles.header_and_below_div}>
                 <Header />

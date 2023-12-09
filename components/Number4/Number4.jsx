@@ -2,6 +2,7 @@
 import Link from "next/link"
 import styles from "./Number4.module.css"
 import { useEffect, useState } from "react"
+import { HeadProvider, Title, Meta } from 'react-head';
 
 export default function Number4() {
     const [alert_, setAlert_] = useState(false)
@@ -12,6 +13,9 @@ export default function Number4() {
 
     return (
         <main id={styles.main}>
+            <HeadProvider>
+                <Title>Aviation</Title>
+            </HeadProvider>
             <div id={styles.main_first}>
                 <h1>Hyer &reg;</h1>
                 <div id={styles.main_first_btn_div}>

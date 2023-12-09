@@ -1,11 +1,15 @@
 "use client"
 import React, { useState, useEffect } from 'react'
 import styles from "./Number4.module.css"
+import { HeadProvider, Title, Meta } from 'react-head';
 
 export default function Number5() {
     return (
         <>
             <main id={styles.main}>
+                <HeadProvider>
+                    <Title>Rotating Circle</Title>
+                </HeadProvider>
                 <section>
                     <div id={styles.big_white_circle}></div>
                     <div id={styles.circle}>
