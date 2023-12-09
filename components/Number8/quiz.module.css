@@ -1,0 +1,44 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://cdn.pixabay.com/photo/2018/09/22/12/31/cat-3695213_960_720.jpg");
+    background-position: center;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 1001;
+    font-family: "ubuntu", sans-serif;
+}
+
+.tickmark {
+    color: black;
+    background: white;
+}
+
+.component {
+    width: 70%;
+    height: 90vh;
+    background-color: #000000;
+    padding: 22px;
+    opacity: 0.8;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz {
+    padding: 50px 0px 50px 0px;
+}
+
+.quiz div {
+    cursor: pointer;
+}
+
+.qE {
+    display: flex;
+    padding: 3px;
+    gap: 13px;
+}

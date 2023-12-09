@@ -28,6 +28,10 @@ const pL = [
     title: "Check Temperature",
     url: "/front-end-just/number-7"
   },
+  {
+    title: "Quiz",
+    url: "/front-end-just/number-8"
+  }
 ]
 
 export default function Page() {
