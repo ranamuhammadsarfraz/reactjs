@@ -32,6 +32,11 @@ const pL = [
     title: "Quiz",
     url: "/front-end-just/number-8"
   }
+  ,
+  {
+    title: "Cards App",
+    url: "/front-end-just/number-9"
+  }
 ]
 
 export default function Page() {
