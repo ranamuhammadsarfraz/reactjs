@@ -1,0 +1,123 @@
+.fifthDiv {
+    width: 60%;
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 9, 121, 1) 35%,
+            rgba(0, 212, 255, 1) 100%);
+}
+
+.fifthDivv {
+    transition: 3s;
+    width: 10%;
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(9, 9, 121, 1) 35%,
+            rgba(0, 212, 255, 1) 100%);
+}
+
+.firstDiv {
+    width: 10%;
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg,
+            rgba(34, 193, 195, 1) 0%,
+            rgba(253, 187, 45, 1) 100%);
+}
+
+.firstDivv {
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg,
+            rgba(34, 193, 195, 1) 0%,
+            rgba(253, 187, 45, 1) 100%);
+    animation: linear 2s firstDivv forwards;
+}
+
+.secondDiv {
+    width: 10%;
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle,
+            rgba(238, 174, 202, 1) 0%,
+            rgba(148, 187, 233, 1) 100%);
+}
+
+.secondDivv {
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(238, 174, 202);
+    background: radial-gradient(circle,
+            rgba(238, 174, 202, 1) 0%,
+            rgba(148, 187, 233, 1) 100%);
+    animation: linear 2s firstDivv forwards;
+}
+
+.thirdDiv {
+    width: 10%;
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle,
+            rgba(63, 94, 251, 1) 0%,
+            rgba(252, 70, 107, 1) 100%);
+}
+
+.thirdDivv {
+    width: 60%;
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle,
+            rgba(63, 94, 251, 1) 0%,
+            rgba(252, 70, 107, 1) 100%);
+    animation: linear 2s firstDivv forwards;
+}
+
+.fourthDiv {
+    width: 10%;
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg,
+            rgba(131, 58, 180, 1) 0%,
+            rgba(253, 29, 29, 1) 50%,
+            rgba(252, 176, 69, 1) 100%);
+}
+
+.fourthDivv {
+    width: 60%;
+    height: 77vh;
+    cursor: pointer;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg,
+            rgba(131, 58, 180, 1) 0%,
+            rgba(253, 29, 29, 1) 50%,
+            rgba(252, 176, 69, 1) 100%);
+    animation: linear 2s firstDivv forwards;
+}
+
+@keyframes firstDivv {
+    0% {
+        width: 0%;
+        opacity: 0;
+    }
+
+    50% {
+        width: 30%;
+        opacity: 0.5;
+    }
+
+    100% {
+        width: 60%;
+        opacity: 1;
+    }
+}
