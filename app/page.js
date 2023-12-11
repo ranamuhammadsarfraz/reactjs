@@ -36,6 +36,10 @@ const pL = [
   {
     title: "Cards App",
     url: "/front-end-just/number-9"
+  },
+  {
+    title: "BMI",
+    url: "/front-end-just/number-10"
   }
 ]
 
