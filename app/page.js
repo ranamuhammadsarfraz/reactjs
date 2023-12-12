@@ -41,6 +41,11 @@ const pL = [
     title: "BMI",
     url: "/front-end-just/number-10"
   }
+  ,
+  {
+    title: "Check City Population",
+    url: "/front-end-just/number-11"
+  }
 ]
 
 export default function Page() {
