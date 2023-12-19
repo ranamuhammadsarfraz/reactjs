@@ -46,6 +46,11 @@ const pL = [
     title: "Check City Population",
     url: "/front-end-just/number-11"
   }
+  ,
+  {
+    title: "Pollution Checker Tool",
+    url: "/front-end-just/number-12"
+  }
 ]
 
 export default function Page() {
