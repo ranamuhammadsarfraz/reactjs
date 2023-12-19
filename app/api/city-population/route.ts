@@ -1,5 +1,4 @@
 import { NextResponse } from "next/server";
-// "pKn873OBShoVD7iS9U1I9Q==WS8rZnDXhtDOGIC3"
 
 export async function GET() {
     let data;
