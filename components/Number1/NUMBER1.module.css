@@ -69,4 +69,8 @@
         padding: 22px 22px 101px 22px;
         gap: 180px;
     }
+
+    #main {
+        height: 1000px;
+    }
 }

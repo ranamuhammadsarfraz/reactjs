@@ -2,10 +2,17 @@
 import React, { useState, useEffect } from 'react'
 import styles from "./Number4.module.css"
 
+export const metadata = {
+    title: 'Rotating Circle',
+    description: '',
+    robots: "no-follow,no-index"
+}
+
 export default function Number5() {
     return (
         <>
             <main id={styles.main}>
+                <p>Available Only in Desktop mode.</p>
                 <section>
                     <div id={styles.big_white_circle}></div>
                     <div id={styles.circle}>

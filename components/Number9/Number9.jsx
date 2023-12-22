@@ -3,6 +3,12 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import styles from "./Number9.module.css";
 
+export const metadata = {
+    title: 'Card App',
+    description: '',
+    robots: "no-follow,no-index"
+}
+
 const MainCSS3 = {
     padding: "22px",
     width: "100%",

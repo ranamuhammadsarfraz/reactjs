@@ -6,6 +6,12 @@ import Loader from "../Loader/loader"
 import Link from 'next/link'
 const admin_address: [string, string] = ["https://rmsencode.com", "Developed by R.M.Sarfraz"]
 
+export const metadata = {
+    title: 'POpulation Checker Tool',
+    description: '',
+    robots: "no-follow,no-index"
+}
+
 export default function Number11() {
     const [name, setName] = useState<string>("")
     const [population, setPopulation] = useState<number>()
@@ -13,6 +19,8 @@ export default function Number11() {
     const [inputValue, setInputValue] = useState<string>("")
     const [alert, setAlert] = useState<string>("")
     const [loader_content, setLoaderContent] = useState<boolean>(true)
+
+
     async function getData() {
         await fetch("/api/city-population", {
             headers: {

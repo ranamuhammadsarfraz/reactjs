@@ -3,6 +3,7 @@
     padding-bottom: 11px;
     width: 100%;
     color: white;
+    overflow: hidden;
 }
 
 /*nav*/
@@ -74,7 +75,7 @@
 
 #inner_big_div {
     display: grid;
-    gap: 9px;
+    gap: 49px;
 }
 
 #inner_big_div h2 {
@@ -170,11 +171,20 @@
     font-size: 15px;
 }
 
+.silver_line_paragraph {
+    width: 500px;
+}
+
 /*bottom*/
 
 @media only screen and (max-width:968px) {
+    .silver_line_paragraph {
+        width: 150px;
+    }
+
     #ul_contain_div ul {
-        gap: 6px;
+        gap: 3px;
+        flex-direction: column;
     }
 
     #ul_contain_div ul li {
@@ -193,5 +203,6 @@
 
     #nav ul {
         gap: 8px;
+        font-size: 8px;
     }
 }

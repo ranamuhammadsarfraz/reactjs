@@ -45,8 +45,16 @@
     padding: 11px;
 }
 
+#main a {
+    opacity: .6;
+}
+
 @media only screen and (max-width:768px) {
     #main {
         height: 1000px;
+    }
+
+    #kg_lbs_div button {
+        width: 100px;
     }
 }

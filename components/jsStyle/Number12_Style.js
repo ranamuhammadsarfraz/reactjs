@@ -25,7 +25,7 @@ const Number12_Style = {
     },
     formStyle: {
         display: "grid",
-        gap: 22
+        gap: 5
     },
     inputStyle: {
         padding: "3px",
@@ -40,7 +40,7 @@ const Number12_Style = {
         cursor: "pointer"
     },
     aqi_desc_style: {
-        width: "60%",
+        width: "90%",
         margin: "auto",
         textAlign: "center"
     }

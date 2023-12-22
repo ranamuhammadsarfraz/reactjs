@@ -3,6 +3,8 @@ import Link from "next/link"
 import styles from "./Number4.module.css"
 import { useEffect, useState } from "react"
 
+
+
 export default function Number4() {
     const [alert_, setAlert_] = useState(false)
     useEffect(() => {

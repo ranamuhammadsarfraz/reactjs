@@ -4,6 +4,12 @@ import style from "./Number10.module.css"
 import { useState } from 'react'
 import Link from 'next/link'
 
+export const metadata = {
+    title: 'BMI Calculator',
+    description: '',
+    robots: "no-follow,no-index"
+}
+
 export default function Number10() {
     const [kgorlbs, setKgOrLbs] = useState<boolean>(true),
         [result, setResult] = useState<any>(),

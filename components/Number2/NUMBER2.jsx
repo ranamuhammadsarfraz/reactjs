@@ -4,6 +4,8 @@ import Image from "next/image"
 import { AiOutlineUpload } from 'react-icons/ai';
 import Link from "next/link";
 
+
+
 export default function Number_2() {
     const arrayLine = [
         {
@@ -131,7 +133,7 @@ export default function Number_2() {
                         <div className={styles.third_block_second_div_first_div} style={{ opacity: "1" }}></div>
                     </div>
                 </section>
-                <footer>
+                <footer id={styles.footer}>
                     <ul>
                         <li>
                             <Link href="#">FAQ</Link>

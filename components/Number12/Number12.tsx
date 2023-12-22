@@ -4,6 +4,13 @@ import dataComponent from "../types/Number12Type"
 import Link from "next/link"
 import { useState, useEffect, FormEvent } from "react"
 import Loader from "../Loader/loader"
+import style from "./Number12.module.css"
+
+export const metadata = {
+    title: 'AQI Checker Tool',
+    description: '',
+    robots: "no-follow,no-index"
+}
 
 export default function Number12(): JSX.Element {
     const [alert, setALert] = useState<string>(dataComponent.alert_1)
@@ -48,22 +55,14 @@ export default function Number12(): JSX.Element {
         })
     };
 
+
+
     useEffect(() => {
         getData()
     }, [])
     return (
         <section style={{ backgroundColor: `${aqi > 100 ? "#c0392b" : "blue"}` }}>
-            {loader_content ? <Loader /> : <main style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                flexDirection: "column",
-                width: "100%",
-                height: "100vh",
-                color: "white",
-                gap: "70px",
-                padding: "22px"
-            }}>
+            {loader_content ? <Loader /> : <main id={style.main}>
                 <h1 style={Number12_Style.h1Style}>{dataComponent.h1}</h1>
                 <div><span style={Number12_Style.aqiStyleSpan1}>{dataComponent.span_1}</span> <span style={Number12_Style.aqiStyleSpan2}>{aqi}</span></div>
                 <div style={Number12_Style.cityStyle}>City: {city}</div>

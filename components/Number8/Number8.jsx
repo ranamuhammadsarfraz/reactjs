@@ -4,6 +4,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 
+export const metadata = {
+    title: 'Quiz',
+    description: '',
+    robots: "no-follow,no-index"
+}
+
 const qU = [
     {
         id: 0,

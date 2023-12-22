@@ -3,6 +3,8 @@ import { FaPersonArrowUpFromLine } from "react-icons/fa6"
 import styles from "./Number6.module.css"
 import { FaArrowDown } from "react-icons/fa";
 
+
+
 export default function Number6() {
     return (
         <div id={styles.whole_page}>
@@ -24,6 +26,7 @@ function Nav() {
                 <div id={styles.nav_first}>
                     <div id={styles.title}><FaPersonArrowUpFromLine />clerk</div>
                     <div id={styles.nav_ul}>
+                        <br />
                         <ul>
                             <li>Product</li>
                             <li>Designer</li>
@@ -32,6 +35,7 @@ function Nav() {
                             <li>Pricing</li>
                             <li>Documentation</li>
                         </ul>
+                        <br />
                     </div>
                 </div>
 
@@ -50,6 +54,7 @@ function Header() {
     return (
         <>
             <div id={styles.header}>
+                <br />
                 <div>Pricing</div>
                 <div id={styles.inner_big_div}>
                     <h2>Cost effective Auth<br /> at your fingertips</h2>
@@ -66,7 +71,7 @@ function Plans() {
             <div className={styles.div_class}>
                 <div id={styles.silver_line}></div>
                 <div>Free Plan</div>
-                <p>Get started for free and scale with your success.<br />We never charge for inactive user.</p>
+                <p className={styles.silver_line_paragraph}>Get started for free and scale with your success.<br />We never charge for inactive user.</p>
                 <div className={styles.rate_div}>
                     <span>$</span><span>0</span><span>per month</span>
                 </div>
@@ -79,7 +84,7 @@ function Plans() {
             <div className={styles.div_class}>
                 <div id={styles.colored_line}></div>
                 <div>ProPlan</div>
-                <p>Get started for free and scale with your success.<br />We never charge for inactive user.</p>
+                <p className={styles.silver_line_paragraph}>Get started for free and scale with your success.<br />We never charge for inactive user.</p>
                 <div className={styles.rate_div}>
                     <span>$</span><span>25</span><span>per month</span>
                 </div>

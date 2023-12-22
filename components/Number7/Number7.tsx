@@ -4,6 +4,12 @@ import styles from "./Number7.module.css"
 import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
+export const metadata = {
+    title: 'City Temperature Checker Tool',
+    description: '',
+    robots: "no-follow,no-index"
+}
+
 export default function Number7() {
     const [dataTemp, setDataTemp] = useState(""),
         [city, setCity] = useState("Lahore"),
