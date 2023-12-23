@@ -78,10 +78,6 @@ export default function Home() {
                             )
                         })}
                     </section>
-                    <div id={styles.btn_div}>
-                        <button>Previous</button>
-                        <button>Next</button>
-                    </div>
                 </div>
             </main>
         </>

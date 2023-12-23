@@ -38,16 +38,3 @@
 #inner_section a:hover {
     opacity: 1;
 }
-
-#btn_div {
-    display: flex;
-    gap: 11px;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-#btn_div button {
-    font-size: 11px;
-    padding: 3px;
-}
