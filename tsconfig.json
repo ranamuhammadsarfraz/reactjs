@@ -28,7 +28,10 @@
     "**/*.ts",
     "**/*.tsx",
     "app/page.js",
-    "app/user-input/page.jsx"
+    "app/user-input/page.jsx",
+    "components/Number13/Footer.jsx",
+    "components/Number13/Number13.jsx",
+    "app/text-sentiment/page.jsx"
   ],
   "exclude": [
     "node_modules"

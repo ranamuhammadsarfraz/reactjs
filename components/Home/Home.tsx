@@ -1,7 +1,9 @@
+"use client"
 import Link from "next/link"
 import styles from "../../app/index.module.css"
-
+import { useState, useEffect } from "react"
 type pL_type = [
+    { title: string; url: string; },
     { title: string; url: string; },
     { title: string; url: string; },
     { title: string; url: string; },
@@ -62,10 +64,15 @@ const pL: pL_type = [
     {
         title: "Pollution Checker Tool",
         url: "/front-end-just/number-12"
+    },
+    {
+        title: "SignIn Replica",
+        url: "/front-end-just/number-13"
     }
 ]
 
 export default function Home() {
+
     return (
         <>
             <main id={styles.main}>
@@ -77,6 +84,10 @@ export default function Home() {
                                 <Link key={index} href={data.url}>{data.title}</Link>
                             )
                         })}
+                        <div id={styles.btn_div}>
+                            <button>Previous</button>
+                            <button>Next</button>
+                        </div>
                     </section>
                 </div>
             </main>

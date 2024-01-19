@@ -1,10 +1,9 @@
-import Number13 from "../../../components/Number13/Number13"
-
+// "use client"
+import Number13 from "../../../components//Number13/Number13"
 export const metadata = {
-    title: 'Netflxx',
-    description: 'Netflxx'
+    title: 'SignIn Replica',
+    description: 'SignIn Replica',
 }
-
 export default function Page() {
     return <Number13 />
 }
