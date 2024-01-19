@@ -14,6 +14,7 @@ type pL_type = [
     { title: string; url: string; },
     { title: string; url: string; },
     { title: string; url: string; },
+    { title: string; url: string; },
     { title: string; url: string; }
 ]
 
@@ -68,6 +69,10 @@ const pL: pL_type = [
     {
         title: "SignIn Replica",
         url: "/front-end-just/number-13"
+    },
+    {
+        title: "Text Sentiment",
+        url: "/text-sentiment"
     }
 ]
 
@@ -84,10 +89,7 @@ export default function Home() {
                                 <Link key={index} href={data.url}>{data.title}</Link>
                             )
                         })}
-                        <div id={styles.btn_div}>
-                            <button>Previous</button>
-                            <button>Next</button>
-                        </div>
+
                     </section>
                 </div>
             </main>
