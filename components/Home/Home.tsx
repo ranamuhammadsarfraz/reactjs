@@ -1,8 +1,8 @@
-"use client"
+
 import Link from "next/link"
 import styles from "../../app/index.module.css"
-import { useState, useEffect } from "react"
 type pL_type = [
+    { title: string; url: string; },
     { title: string; url: string; },
     { title: string; url: string; },
     { title: string; url: string; },
@@ -73,6 +73,10 @@ const pL: pL_type = [
     {
         title: "Text Sentiment",
         url: "/text-sentiment"
+    },
+    {
+        title: "Emoji Generator",
+        url: "/emoji-generator"
     }
 ]
 
