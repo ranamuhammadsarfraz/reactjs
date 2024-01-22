@@ -15,6 +15,7 @@ type pL_type = [
     { title: string; url: string; },
     { title: string; url: string; },
     { title: string; url: string; },
+    { title: string; url: string; },
     { title: string; url: string; }
 ]
 
@@ -77,6 +78,10 @@ const pL: pL_type = [
     {
         title: "Emoji Generator",
         url: "/emoji-generator"
+    },
+    {
+        title: "Contact Page Demo",
+        url: "/contact-page-demo"
     }
 ]
 

@@ -1,0 +1,66 @@
+$_input_padding: 6px;
+$_input_outline: 0;
+$_input_font_size: 11px;
+$color-primery: aliceblue;
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    gap: 23px;
+    background-color: #333;
+
+    h1 {
+        color: $color-primery;
+        font-size: 44px;
+    }
+
+    input,
+    textarea {
+        width: 500px;
+        font-size: $_input_font_size;
+        padding: $_input_padding;
+        border-radius: $_input_padding;
+        outline: $_input_outline;
+    }
+
+    textarea {
+        height: 300px;
+    }
+
+    button {
+        box-shadow: 10px 10px rgb(78, 78, 78);
+        padding: $_input_padding;
+        width: 300px;
+        border-radius: $_input_padding;
+        background-color: $color-primery;
+        font-size: $_input_font_size;
+    }
+
+    button:active {
+        box-shadow: none;
+    }
+
+    p {
+        color: $color-primery;
+    }
+
+    span {
+        opacity: .5;
+        position: absolute;
+        bottom: $_input_padding;
+        color: $color-primery;
+        font-size: $_input_font_size;
+    }
+
+    @media only screen and (max-width:768px) {
+
+        input,
+        textarea {
+            width: 250px;
+        }
+    }
+}
