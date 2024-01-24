@@ -16,6 +16,7 @@ type pL_type = [
     { title: string; url: string; },
     { title: string; url: string; },
     { title: string; url: string; },
+    { title: string; url: string; },
     { title: string; url: string; }
 ]
 
@@ -82,6 +83,10 @@ const pL: pL_type = [
     {
         title: "Contact Page Demo",
         url: "/contact-page-demo"
+    },
+    {
+        title: "Dynamic Left",
+        url: "/dynamic-left"
     }
 ]
 
