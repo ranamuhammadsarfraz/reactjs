@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import styles from "../../app/index.module.css"
+import styles from "../../app/index.module.scss"
 type pL_type = [
     { title: string; url: string; },
     { title: string; url: string; },
@@ -100,17 +100,16 @@ export default function Home() {
     return (
         <>
             <main id={styles.main}>
-                <div id={styles.inner_div}>
-                    <h1>NextJs Projects</h1>
-                    <section id={styles.inner_section}>
-                        {pL.map((data, index) => {
-                            return (
-                                <Link key={index} href={data.url}>{data.title}</Link>
-                            )
-                        })}
-
-                    </section>
-                </div>
+                <h1>SPA Project</h1>
+                <ul>
+                    {pL.map((data, index) => {
+                        return (
+                            <li key={index}>
+                                <Link href={data.url}>{data.title}</Link>
+                            </li>
+                        )
+                    })}
+                </ul>
             </main>
         </>
     )
