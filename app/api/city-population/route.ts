@@ -4,7 +4,7 @@ export async function GET() {
     let data;
     await fetch('https://api.api-ninjas.com/v1/city?name=' + "Lahore", {
         headers: {
-            'X-Api-Key': "pKn873OBShoVD7iS9U1I9Q==WS8rZnDXhtDOGIC3"
+            'X-Api-Key': process.env.api_key
         }
     }).then((res) => res.json()).then((res) => {
         data = res
