@@ -17,6 +17,7 @@ type pL_type = [
     { title: string; url: string; },
     { title: string; url: string; },
     { title: string; url: string; },
+    { title: string; url: string; },
     { title: string; url: string; }
 ]
 
@@ -87,6 +88,10 @@ const pL: pL_type = [
     {
         title: "Dynamic Left",
         url: "/dynamic-left"
+    },
+    {
+        title: "Stars | Astronomy",
+        url: "/stars-information"
     }
 ]
 
