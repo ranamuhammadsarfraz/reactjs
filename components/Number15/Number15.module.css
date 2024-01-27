@@ -1,6 +1,6 @@
 #main_div {
     width: 100%;
-    height: 100vh;
+    padding: 3vh 0vh 9vh 0vh;
     display: flex;
     justify-content: space-around;
     background-color: #333;

@@ -41,9 +41,9 @@ export default function Number14() {
     }
 
     return (
-        <main className="w-full h-screen bg-green-900 text-white flex flex-col justify-center items-center gap-9 transition-all ">
+        <main className="w-full h-screen bg-green-900 text-white flex flex-col justify-center items-center gap-9 transition-all text-center">
             <h1 className="text-5xl">Emoji Generator</h1>
-            <form onSubmit={myFunction}>
+            <form className="flex flex-wrap" onSubmit={myFunction}>
                 <input className="px-1 text-green-950 outline-none" placeholder="Emoji Name (example: smile) *" required onChange={(c) => setInputValue(c.target.value)} />
                 {btnBool ? <button className="bg-green-600 px-8">Get</button> : <button className="bg-black px-8">Loading...</button>}
             </form>
