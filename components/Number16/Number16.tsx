@@ -1,6 +1,6 @@
 "use client"
 import styles from "./Number16.module.scss"
-import { useState, useEffect, FormEvent } from "react";
+import { useState, useEffect } from "react";
 import n16 from "../types/Number16"
 import Link from "next/link";
 
@@ -48,7 +48,7 @@ export default function Number16() {
                         setSectionB(1)
                     }
                 },
-                "2": async (e: FormEvent) => {
+                "2": async (e: any) => {
                     e.preventDefault()
                     setSectionB(0)
                     const requestOptions = {

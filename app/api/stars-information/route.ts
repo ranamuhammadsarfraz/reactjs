@@ -15,7 +15,7 @@ export async function GET() {
     let data;
     await fetch('https://api.api-ninjas.com/v1/stars?name=' + 'vega', {
         headers: {
-            'X-Api-Key': process.env.api_key
+            'X-Api-Key': "pKn873OBShoVD7iS9U1I9Q==WS8rZnDXhtDOGIC3"
         }
     }).then((res) => res.json()).then((res) => {
         data = res
@@ -30,7 +30,7 @@ export async function POST(request: Request) {
     let data;
     await fetch('https://api.api-ninjas.com/v1/stars?name=' + star, {
         headers: {
-            'X-Api-Key': process.env.api_key
+            'X-Api-Key': "pKn873OBShoVD7iS9U1I9Q==WS8rZnDXhtDOGIC3"
         }
     }).then((res) => res.json()).then((res) => {
         data = res

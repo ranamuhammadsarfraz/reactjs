@@ -16,7 +16,7 @@ export async function GET(request: Request) {
     await fetch("https://api.api-ninjas.com/v1/airquality?city=" + city, {
         method: 'GET',
         headers: {
-            'X-Api-Key': process.env.api_key
+            'X-Api-Key': "pKn873OBShoVD7iS9U1I9Q==WS8rZnDXhtDOGIC3"
         },
     })
         .then(response => response.json())
@@ -34,7 +34,7 @@ export async function POST(request: Request) {
     await fetch("https://api.api-ninjas.com/v1/airquality?city=" + city, {
         method: 'GET',
         headers: {
-            'X-Api-Key': process.env.api_key
+            'X-Api-Key': "pKn873OBShoVD7iS9U1I9Q==WS8rZnDXhtDOGIC3"
         },
     })
         .then(response => response.json())
