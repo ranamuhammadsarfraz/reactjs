@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn-speak">Speak</button>
+    <button id="btn-pause">Pause</button>
+    <button id="btn-stop">Stop</button>
+    <button id="btn-resume">Resume</button>
+    <script>
+        // const synth = window.speechSynthesis;
+        // const voices = synth.getVoices();
+        document.getElementById("btn-speak").addEventListener("click", () => {
+
+            var msg = "Hello World, how are you, everything fine?"
+            if (speechSynthesis.paused) {
+                return speechSynthesis.resume()
+            }
+            if (speechSynthesis.speaking) return
+            const utterrence = new SpeechSynthesisUtterance(msg)
+            utterrence.pitch = .5;
+            utterrence.rate = .7;
+            utterrence.volume = 1;
+            utterrence.addEventListener("end", () => {
+                console.log("Matter solved")
+            })
+            speechSynthesis.speak(utterrence)
+        })
+
+        document.getElementById("btn-pause").addEventListener("click", () => {
+            if (speechSynthesis.speaking) speechSynthesis.pause()
+        })
+
+        document.getElementById("btn-stop").addEventListener("click", () => {
+            speechSynthesis.resume()
+            speechSynthesis.cancel()
+        })
+
+        document.getElementById("btn-resume").addEventListener("click", () => {
+            speechSynthesis.resume()
+        })
+    </script>
+</body>
+
+</html>

@@ -18,6 +18,7 @@ type pL_type = [
     { title: string; url: string; },
     { title: string; url: string; },
     { title: string; url: string; },
+    { title: string; url: string; },
     { title: string; url: string; }
 ]
 
@@ -92,6 +93,10 @@ const pL: pL_type = [
     {
         title: "Stars | Astronomy",
         url: "/stars-information"
+    },
+    {
+        title: "Dictionary",
+        url: "/dictionary"
     }
 ]
 
