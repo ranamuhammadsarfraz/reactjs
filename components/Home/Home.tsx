@@ -1,28 +1,9 @@
 
 import Link from "next/link"
 import styles from "../../app/index.module.scss"
-type pL_type = [
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; },
-    { title: string; url: string; }
-]
+type pL_type = { title: string; url: string; }
 
-const pL: pL_type = [
+const pL: pL_type[] = [
     {
         title: "Two Horn Horse",
         url: "/front-end-just/number-1"
@@ -97,6 +78,10 @@ const pL: pL_type = [
     {
         title: "Dictionary",
         url: "/dictionary"
+    },
+    {
+        title: "Currency Converter",
+        url: "https://svelte-project-kohl.vercel.app/currency-converter"
     }
 ]
 
