@@ -87,6 +87,10 @@ const pL: pL_type[] = [
     {
         title: "Crypto Price Checker",
         url: fK + "/crypto-price",
+    },
+    {
+        title: "Word Counter web tool",
+        url: fK + "/word-counter",
     }
 ]
 
