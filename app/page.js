@@ -1,8 +1,8 @@
 import Home from "../components/Home/Home"
 export const metadata = {
-  title: 'NextJs Practice',
+  title: 'Practice',
   description: '',
-  robots: "no-follow,no-index"
+  robots: "follow,index"
 }
 export default function Page() {
   return <Home />
