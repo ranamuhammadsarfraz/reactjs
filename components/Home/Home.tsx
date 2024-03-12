@@ -91,6 +91,10 @@ const pL: pL_type[] = [
     {
         title: "Word Counter web tool",
         url: fK + "/word-counter",
+    },
+    {
+        title: "Congratulation Web Component",
+        url: "/component-congrats"
     }
 ]
 
