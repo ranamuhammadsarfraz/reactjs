@@ -95,6 +95,15 @@ const pL: pL_type[] = [
     {
         title: "Congratulation Web Component",
         url: "/component-congrats"
+    },
+    {
+        title: "Social Links Dummy Profile",
+        url: "/social-links-dummy-profile"
+    }
+    ,
+    {
+        title: "Url Shortening API Landing Page",
+        url: "/url-shotening-api-landing-page"
     }
 ]
 

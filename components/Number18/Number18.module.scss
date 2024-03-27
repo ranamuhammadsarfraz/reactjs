@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+$bg: rgb(28, 143, 76);
+
+#main {
+    font-family: "Open Sans", sans-serif;
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+
+
+        h1 {
+            flex: 2;
+            padding-left: 11px;
+
+            a {
+                font-weight: bolder;
+                font-size: 29px;
+            }
+        }
+
+        main {
+            flex: 9;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 23px;
+            padding: 0px 69px 0px 9px;
+
+            ul {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 23px;
+
+                li {
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            section {
+                display: flex;
+                gap: 23px;
+
+                button {
+                    padding: 3px 15px 6px 15px;
+                    font-size: 15px;
+                    border-radius: 16px;
+                    border: none;
+                }
+
+                button:nth-child(1) {
+                    background-color: rgb(255, 255, 255);
+                }
+
+                button:nth-child(2) {
+                    background-color: rgb(28, 143, 76);
+                    color: #f8f4f4;
+                }
+            }
+        }
+
+        #nav_btn {
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            main {
+                position: fixed;
+                z-index: 101;
+                justify-content: center;
+                top: -1042px;
+                right: 0px;
+                width: 101px;
+                height: 100vh;
+                flex-direction: column;
+                padding: 0;
+                background-color: white;
+
+                ul {
+                    flex-direction: column;
+                }
+
+                section {
+                    flex-direction: column;
+                }
+            }
+
+            #nav_btn {
+                display: block;
+                font-size: 29px;
+                cursor: pointer;
+                width: 101px;
+                display: grid;
+                place-items: center;
+            }
+        }
+    }
+
+    #header {
+        background-image: url("/gallery/apple-1868496_640.jpg");
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 10px;
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 17px;
+
+        h2 {
+            text-align: left;
+            width: 100%;
+            font-size: 28px;
+            font-weight: bolder;
+        }
+
+        p {
+            max-width: 300px;
+        }
+
+        button {
+            background-color: rgb(28, 143, 76);
+            width: 150px;
+            border-radius: 23px;
+            padding: 13px;
+            color: white;
+        }
+    }
+
+    @media (max-width:1098px) {
+        #header {
+            background-position: right;
+            transition: 3s;
+            background-size: 200px;
+        }
+    }
+
+    #email_form {
+        width: 100%;
+        position: relative;
+        z-index: 2;
+
+        form {
+            border-radius: 6px;
+            padding: 22px 0px 22px 0px;
+            width: 70%;
+            margin: auto;
+            background-color: rgb(27, 14, 14);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+
+            input {
+                width: 60%;
+                padding: 6px;
+            }
+
+            button {
+                width: 15%;
+                font-size: 12px;
+                color: white;
+                background-color: $bg;
+                padding: 9px 0px 9px 0px;
+            }
+        }
+    }
+
+    @media (max-width:768px) {
+        #email_form {
+            form {
+                width: 90%;
+
+                input {
+                    width: 70%;
+                    outline: none;
+                }
+
+                button {
+                    width: 20%;
+                }
+            }
+        }
+    }
+
+    #cards_component {
+        width: 100%;
+        background-color: rgb(245, 241, 241);
+        position: relative;
+        bottom: 42px;
+        z-index: 1;
+
+
+        section:nth-child(1) {
+            padding-top: 101px;
+            max-width: 500px;
+            margin: auto;
+            display: grid;
+            gap: 13px;
+            place-content: center;
+            text-align: center;
+
+            h3 {
+                font-size: 23px;
+                font-weight: bolder;
+            }
+
+            p {
+                font-size: 12px;
+                padding: 11px;
+            }
+        }
+
+        section:nth-child(2) {
+            padding: 80px 0px 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .each_component {
+                background-color: white;
+                width: 300px;
+                border-radius: 6px;
+                padding: 6px;
+
+                img {
+                    border-radius: 50%;
+                    width: 55px;
+                    height: 60px;
+                    position: relative;
+                    bottom: 39px;
+                }
+
+                h4,
+                p {
+                    position: relative;
+                    bottom: 27px;
+                }
+
+                h4 {
+                    font-weight: bolder;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .border_class {
+                width: 30px;
+                background-color: rgb(30, 124, 161);
+                height: 6px;
+            }
+
+            div:nth-child(3) {
+                position: relative;
+                top: 30px;
+            }
+
+            div:nth-child(5) {
+                position: relative;
+                top: 60px;
+            }
+        }
+
+        @media (max-width:999px) {
+            section:nth-child(2) {
+                flex-direction: column;
+
+                div:nth-child(3) {
+                    position: relative;
+                    top: 0px;
+                }
+
+                div:nth-child(5) {
+                    position: relative;
+                    top: 0px;
+                }
+            }
+        }
+    }
+
+    #submit_component {
+        padding: 101px;
+        display: grid;
+        place-items: center;
+        gap: 12px;
+        // position: relative;
+        // bottom: 42px;
+        background-image: url("/gallery/feather-4431599_640.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+
+        div {
+            font-weight: bolder;
+        }
+
+        button {
+            padding: 12px;
+            width: 200px;
+            background-color: $bg;
+
+            border-radius: 12px;
+        }
+    }
+
+    #footer {
+        background-color: #333;
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 101px 0px 101px 0px;
+
+        ul {
+            flex: 2;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 55px;
+            text-align: center;
+
+            li {
+                display: grid;
+                gap: 12px;
+            }
+        }
+
+        section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+        }
+    }
+
+    @media (max-width:768px) {
+        #footer {
+            flex-direction: column;
+        }
+
+        ul {
+            width: 100%;
+        }
+
+        section {
+            padding-top: 101px;
+        }
+    }
+
+}

@@ -1,6 +1,6 @@
 #main {
     width: 100%;
-    background-image: url("https://cdn.pixabay.com/animation/2023/03/31/01/32/01-32-38-664_512.gif");
+    background-image: url("/gallery/01-32-38-664_512.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -10,9 +10,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 10vh;
     font-family: "Roboto", sans-serif;
     padding-bottom: 20vh;
+    gap: 11px;
 
     h1 {
         font-size: 50px;
