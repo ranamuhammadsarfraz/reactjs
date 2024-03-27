@@ -20,7 +20,7 @@ const menuArray: menuArrayType = [
         img_source: "https://pixabay.com/users/pexels-2286921/",
         person: "Mr XYZ",
         profession: "Photographer or etc.",
-        short_intro: "Lorem ipsum is a dummy text, used by software developers during developing. This image is by pexels."
+        short_intro: "Lorem ipsum is a dummy text, used by software developers during developing. Image source is https://pixabay.com/users/pexels-2286921/"
     },
     [
         {
