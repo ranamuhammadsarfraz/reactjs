@@ -1,0 +1,59 @@
+.main {
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0px 0px 0px 60px;
+    flex-wrap: wrap;
+
+    div:nth-child(1) {
+        flex: 1;
+        display: grid;
+        gap: 19px;
+
+        section {
+            font-weight: bolder;
+        }
+
+        p {
+            max-width: 300px;
+        }
+
+        button {
+            padding: 12px 23px 12px 23px;
+            border: solid 1px grey;
+            border-radius: 11px;
+            cursor: pointer;
+            width: 101px;
+        }
+
+        button:hover {
+            background-color: #333;
+            color: silver;
+        }
+    }
+
+    div:nth-child(2) {
+        flex: 1;
+
+        img {
+            width: 501px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .main {
+        flex-direction: column;
+        height: max-content;
+        padding: 70px 0px 70px 0px;
+        text-align: center;
+
+        div:nth-child(2) {
+            img {
+                width: 200px;
+            }
+        }
+    }
+}

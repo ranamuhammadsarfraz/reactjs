@@ -104,6 +104,10 @@ const pL: pL_type[] = [
     {
         title: "Url Shortening API Landing Page",
         url: "/url-shotening-api-landing-page"
+    },
+    {
+        title: "Agency Landing Page",
+        url: "/agency-landing-page"
     }
 ]
 

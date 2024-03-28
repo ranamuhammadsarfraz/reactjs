@@ -1,0 +1,29 @@
+.main {
+    background-color: rgb(103, 202, 152);
+    padding: 101px 0px 101px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 34px;
+
+    div:nth-child(1) {
+        font-size: 34px;
+    }
+
+    div:nth-child(2) {
+        display: flex;
+        gap: 23px;
+        opacity: .9;
+        font-size: 15px;
+    }
+
+    div:nth-child(3) {
+        display: flex;
+        gap: 23px;
+    }
+
+    div:nth-child(4) {
+        font-size: 9px;
+    }
+}

@@ -1,0 +1,19 @@
+.main {
+    width: 100%;
+    display: flex;
+
+    div {
+        height: 70vh;
+        flex: 1;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width:668px) {
+    .main {
+        flex-direction: column;
+        height: 100vh;
+    }
+}

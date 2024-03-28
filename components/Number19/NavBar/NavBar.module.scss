@@ -1,0 +1,32 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+
+    section {
+        font-weight: bolder;
+    }
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 23px;
+
+        li {
+            a {
+                font-size: 13px;
+            }
+
+            button {
+                background-color: rgb(255, 255, 255);
+                padding: 7px 19px 7px 19px;
+                border-radius: 12px;
+                font-size: 12px;
+                color: #333;
+            }
+        }
+    }
+}
