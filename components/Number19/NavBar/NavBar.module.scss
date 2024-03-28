@@ -27,6 +27,12 @@
                 font-size: 12px;
                 color: #333;
             }
+
+            @media (max-width:768px) {
+                button {
+                    display: none;
+                }
+            }
         }
     }
 }
