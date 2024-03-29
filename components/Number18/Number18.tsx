@@ -18,7 +18,7 @@ export default function Number18() {
             <Header />
             <EmailForm />
             <CardsComponent />
-            <SubmitComponent />
+            <ButtonComponent />
             <Footer />
             <Developer />
         </main>
@@ -118,11 +118,11 @@ function CardsComponent() {
     )
 }
 
-function SubmitComponent() {
+function ButtonComponent() {
     return (
         <div id={styles.submit_component}>
-            <div>Submit your Data</div>
-            <button>Submit</button>
+            <div>Dear</div>
+            <button>Hello World!</button>
         </div>
     )
 }

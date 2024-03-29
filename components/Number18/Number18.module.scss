@@ -289,26 +289,25 @@ $bg: rgb(28, 143, 76);
     }
 
     #submit_component {
-        padding: 101px;
-        display: grid;
-        place-items: center;
-        gap: 12px;
-        // position: relative;
-        // bottom: 42px;
         background-image: url("/gallery/feather-4431599_640.jpg");
-        background-repeat: no-repeat;
         background-size: cover;
         color: white;
+        padding: 101px 0px 101px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        flex-direction: column;
+        padding-right: 3px;
 
         div {
             font-weight: bolder;
         }
 
         button {
-            padding: 12px;
+            padding: 7px 0px 7px 0px;
             width: 200px;
             background-color: $bg;
-
             border-radius: 12px;
         }
     }
