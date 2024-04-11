@@ -108,6 +108,10 @@ const pL: pL_type[] = [
     {
         title: "Agency Landing Page",
         url: "/agency-landing-page"
+    },
+    {
+        title: "Word Counter",
+        url: "/word-counter"
     }
 ]
 

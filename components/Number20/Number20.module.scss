@@ -1,0 +1,47 @@
+$primeryColor: #e2e2e2;
+$secondaryColor: #333;
+
+#main {
+    width: 100%;
+    padding: 60px 0px 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    h1 {
+        font-size: 42px;
+    }
+
+    section {
+        width: 90%;
+
+        p {
+            width: max-content;
+            color: $primeryColor;
+            font-weight: bolder;
+            padding: 0px 3px 0px 3px;
+            background-color: $secondaryColor;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+
+        textarea {
+            padding: 13px;
+            width: 90vw;
+            height: 70vh;
+            background-color: $primeryColor;
+        }
+    }
+
+    a,
+    p {
+        color: $secondaryColor;
+        font-size: 11px;
+    }
+}
