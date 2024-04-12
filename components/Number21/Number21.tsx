@@ -34,7 +34,7 @@ function Number21() {
                 setLoad(false)
             }
             else if (dataIt.data.similarity != "1") {
-                setResult(dataIt.data.similarity.toFixed(1) + "% similar")
+                setResult((dataIt.data.similarity.toFixed(3) * 100).toFixed(0) + "% similar")
                 setLoad(false)
             }
         } catch (error) {
@@ -43,11 +43,17 @@ function Number21() {
         }
     }
     useEffect(() => {
-        if (text1.length == 0) return setText1length("Add words in first section")
+        if (text1.length == 0) {
+            setResult("")
+            return setText1length("Add words in first section")
+        }
         setText1length(text1.split(" ").length.toString() + " words in First Section")
     }, [text1])
     useEffect(() => {
-        if (text2.length == 0) return setText2length("Add words in second section")
+        if (text2.length == 0) {
+            setResult("")
+            return setText2length("Add words in second section")
+        }
         setText2length(text2.split(" ").length.toString() + " words in First Section")
     }, [text2])
     return (
