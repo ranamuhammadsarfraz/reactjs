@@ -112,6 +112,10 @@ const pL: pL_type[] = [
     {
         title: "Word Counter",
         url: "/word-counter"
+    },
+    {
+        title: "Text Similarity Checker",
+        url: "/text-similarity"
     }
 ]
 

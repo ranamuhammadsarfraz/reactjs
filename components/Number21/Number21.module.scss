@@ -1,0 +1,60 @@
+@import "../../styles/responsive.scss";
+$primeryColor: silver;
+
+#main {
+    width: 100%;
+    display: grid;
+    gap: 11px;
+    padding: 11px;
+
+    p {
+        opacity: .6;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: bolder;
+    }
+
+    form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 13px;
+        width: 90vw;
+        margin: auto;
+
+        textarea {
+            padding: 3px;
+
+            resize: vertical;
+            height: 501px;
+            border: solid 1px $primeryColor;
+            flex: 1;
+
+            @include sm {
+                width: 90vw;
+                flex: none;
+            }
+
+        }
+
+
+    }
+
+    button {
+        background-color: $primeryColor;
+        padding: 3px;
+        width: 90vw;
+        margin: auto;
+    }
+
+    main {
+        font-weight: bolder;
+    }
+
+    span {
+        font-size: 9px;
+    }
+}
