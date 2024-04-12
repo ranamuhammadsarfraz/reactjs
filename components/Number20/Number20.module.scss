@@ -15,7 +15,7 @@ $secondaryColor: #333;
     }
 
     section {
-        width: 90%;
+        width: 90vw;
 
         p {
             width: max-content;
@@ -33,9 +33,16 @@ $secondaryColor: #333;
 
         textarea {
             padding: 13px;
-            width: 90vw;
-            height: 70vh;
+            width: 70vw;
+            height: 60vh;
             background-color: $primeryColor;
+            resize: vertical;
+        }
+
+        @media (max-width:768px) {
+            textarea {
+                width: 89vw;
+            }
         }
     }
 
