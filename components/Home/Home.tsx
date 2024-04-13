@@ -117,6 +117,11 @@ const pL: pL_type[] = [
         title: "Text Similarity Checker",
         url: "/text-similarity"
     }
+    ,
+    {
+        title: "Country",
+        url: "/country"
+    }
 ]
 
 export default function Home() {

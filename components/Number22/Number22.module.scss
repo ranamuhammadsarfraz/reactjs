@@ -1,0 +1,76 @@
+$primery_color: silver;
+
+#main {
+    width: 100%;
+    display: grid;
+    place-items: center;
+
+    div {
+        text-align: center;
+        padding: 23px 0px 101px 0px;
+
+        h1 {
+            font-size: 44px;
+        }
+
+        form {
+            display: grid;
+            gap: 12px;
+
+            input {
+                padding: 16px 20px 16px 20px;
+                border: solid 1px $primery_color;
+            }
+
+            button {
+                border-radius: 2px;
+                padding: 15px;
+                background-color: $primery_color;
+                color: whitesmoke;
+
+                &:hover {
+                    background-color: #333;
+                }
+            }
+        }
+    }
+
+    section {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 55px;
+        padding: 6px 0px 6px 0px;
+
+        button {
+            font-size: 14px;
+            border: solid 1px $primery_color;
+            padding: 6px 33px 6px 33px;
+            border-radius: 5px;
+
+            main:nth-child(1) {
+                font-weight: bolder;
+            }
+        }
+
+        .loading {
+            font-size: 42px;
+            animation: linear 1s load_animation infinite;
+
+            @keyframes load_animation {
+                to {
+                    transform: rotate(1turn);
+                }
+            }
+        }
+    }
+
+    span {
+        text-align: center;
+        padding: 55px 0px 0px 0px;
+        font-size: 9px;
+    }
+}
