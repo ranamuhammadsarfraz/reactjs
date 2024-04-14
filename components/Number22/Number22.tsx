@@ -32,7 +32,7 @@ function Number22() {
             const myArray: { "0": string, "1": string | number }[] = [
                 {
                     "0": "GDP (gross domestic product)",
-                    "1": dataIt.data[0].gdp + "USD"
+                    "1": dataIt.data[0].gdp + " USD"
                 },
                 {
                     "0": "Land Area",
@@ -44,7 +44,7 @@ function Number22() {
                 },
                 {
                     "0": "Imports",
-                    "1": dataIt.data[0].imports + "USD"
+                    "1": dataIt.data[0].imports + " USD"
                 },
 
                 {
@@ -57,7 +57,7 @@ function Number22() {
                 },
                 {
                     "0": "GDP Growth",
-                    "1": dataIt.data[0].gdp_growth + "USD"
+                    "1": dataIt.data[0].gdp_growth + " USD"
                 },
                 {
                     "0": "CO2 Emission",
@@ -69,15 +69,15 @@ function Number22() {
                 },
                 {
                     "0": "Exports",
-                    "1": dataIt.data[0].exports + "USD"
+                    "1": dataIt.data[0].exports + " USD"
                 },
                 {
                     "0": "Threatened species",
-                    "1": dataIt.data[0].threatened_species
+                    "1": dataIt.data[0].threatened_species + " species"
                 },
                 {
                     "0": "Population",
-                    "1": dataIt.data[0].population
+                    "1": dataIt.data[0].population + " million"
                 },
                 {
                     "0": "Internet User",
