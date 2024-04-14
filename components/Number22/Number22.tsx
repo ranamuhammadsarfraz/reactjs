@@ -14,7 +14,8 @@ function Number22() {
 
     async function myMethod(event: any) {
         event.preventDefault()
-        const inputAdded: string = input[0].toUpperCase() + input.slice(1).toLowerCase()
+        let inputAdded: string = input[0].toUpperCase() + input.slice(1).toLowerCase()
+        inputAdded = inputAdded == "Uk" ? "United Kingdom" : inputAdded
         try {
             setLoading(true)
             setMyData("")
@@ -31,11 +32,11 @@ function Number22() {
             const myArray: { "0": string, "1": string | number }[] = [
                 {
                     "0": "GDP (gross domestic product)",
-                    "1": dataIt.data[0].gdp
+                    "1": dataIt.data[0].gdp + "USD"
                 },
                 {
                     "0": "Land Area",
-                    "1": dataIt.data[0].surface_area
+                    "1": dataIt.data[0].surface_area + "km²"
                 },
                 {
                     "0": "Unemployment",
@@ -43,12 +44,12 @@ function Number22() {
                 },
                 {
                     "0": "Imports",
-                    "1": dataIt.data[0].imports
+                    "1": dataIt.data[0].imports + "USD"
                 },
 
                 {
                     "0": "Homicide Rate",
-                    "1": dataIt.data[0].homicide_rate
+                    "1": dataIt.data[0].homicide_rate + "%"
                 },
                 {
                     "0": "Currency",
@@ -56,23 +57,19 @@ function Number22() {
                 },
                 {
                     "0": "GDP Growth",
-                    "1": dataIt.data[0].gdp_growth
+                    "1": dataIt.data[0].gdp_growth + "USD"
                 },
                 {
                     "0": "CO2 Emission",
-                    "1": dataIt.data[0].co2_emissions
+                    "1": dataIt.data[0].co2_emissions + " million metric tons "
                 },
                 {
                     "0": "Forest Area",
-                    "1": dataIt.data[0].forested_area
+                    "1": dataIt.data[0].forested_area + "%"
                 },
                 {
                     "0": "Exports",
-                    "1": dataIt.data[0].exports
-                },
-                {
-                    "0": "Infant Morality",
-                    "1": dataIt.data[0].infant_mortality
+                    "1": dataIt.data[0].exports + "USD"
                 },
                 {
                     "0": "Threatened species",
@@ -87,16 +84,28 @@ function Number22() {
                     "1": dataIt.data[0].internet_users + "%"
                 },
                 {
-                    "0": "Fertility rate",
-                    "1": dataIt.data[0].fertility
+                    "0": "Employment in agriculture",
+                    "1": dataIt.data[0].employment_agriculture + "%"
                 },
                 {
-                    "0": "Population",
-                    "1": dataIt.data[0].population
+                    "0": "Urban Population",
+                    "1": dataIt.data[0].urban_population + "%"
+                },
+                {
+                    "0": "Urban population growth",
+                    "1": dataIt.data[0].urban_population_growth + "% yearly"
                 },
                 {
                     "0": "Name",
                     "1": dataIt.data[0].name
+                },
+                {
+                    "0": "Capital",
+                    "1": dataIt.data[0].capital
+                },
+                {
+                    "0": "Currency code",
+                    "1": dataIt.data[0].currency.code
                 },
                 {
                     "0": "Region",
@@ -122,6 +131,7 @@ function Number22() {
                     <button disabled={loading}>search</button>
                 </form>
             </div>
+            <h2>{(myData == "") ? "" : myData[16]["1"]}</h2>
             <section>
                 <p>{!loading ? alertDiv : <span><GiSandsOfTime className={styles.loading} /></span>}</p>
                 {(myData == "") ? "" : myData.map((data: { "0": string, "1": string | number }, index: number) => {
@@ -136,7 +146,8 @@ function Number22() {
                 })}
             </section>
             <span>
-                <Link href="https://rmsencode.com">Webpage Developed by RMSENCODE</Link>
+                <Link href={atob(dataArr.developer)}>Developed by rmsencode</Link>
+                <p>All rights reserved</p>
                 <p>Data is controlled by third party API (Application programming interface).</p>
             </span>
         </main>
