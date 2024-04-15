@@ -44,7 +44,7 @@ function Number22() {
                 },
                 {
                     "0": "Imports",
-                    "1": dataIt.data[0].imports + " USD"
+                    "1": dataIt.data[0].imports + " Million USD"
                 },
 
                 {
@@ -69,7 +69,7 @@ function Number22() {
                 },
                 {
                     "0": "Exports",
-                    "1": dataIt.data[0].exports + " USD"
+                    "1": dataIt.data[0].exports + " Million USD"
                 },
                 {
                     "0": "Threatened species",
