@@ -121,6 +121,10 @@ const pL: pL_type[] = [
     {
         title: "Country",
         url: "/country"
+    },
+    {
+        title: "Password Generator",
+        url: "/password-generator"
     }
 ]
 
