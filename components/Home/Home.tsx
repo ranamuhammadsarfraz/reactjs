@@ -1,9 +1,8 @@
-
+import styles from "./Home.module.scss"
 import Link from "next/link"
-import styles from "../../app/index.module.scss"
 type pL_type = { title: string; url: string; }
 const fK: string[] = ["https://svelte-project-kohl.vercel.app"]
-
+import dataArr from "../../components/file/data"
 const pL: pL_type[] = [
     {
         title: "Two Horn Horse",
@@ -125,6 +124,10 @@ const pL: pL_type[] = [
     {
         title: "Password Generator",
         url: "/password-generator"
+    },
+    {
+        title: "Phone Number Validator",
+        url: "/phone-number-validator-tool"
     }
 ]
 
@@ -133,7 +136,7 @@ export default function Home() {
     return (
         <>
             <main id={styles.main}>
-                <h1>SPA Project</h1>
+                <h1>Project</h1>
                 <ul>
                     {pL.map((data, index) => {
                         return (
@@ -143,6 +146,7 @@ export default function Home() {
                         )
                     })}
                 </ul>
+                <Link href={atob(dataArr.developer)}>Developed by {atob(dataArr.developer).slice(8, 17)}</Link>
             </main>
         </>
     )
