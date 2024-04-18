@@ -25,7 +25,8 @@ function Number24() {
                 return 0;
             }
             setResult({
-                country: `<strong>${dataIt.data.country}</strong>`,
+                is_valid: `<strong>${dataIt.data.is_valid ? "Legal" : "InValid"}</strong>`,
+                country: "<span>Country: " + `<strong>${dataIt.data.country}</strong>` + "</span>",
                 i_format: "<span>International format: " + `<strong>${dataIt.data.format_international}</strong>` + "</span>",
                 l_format: "<span>National format: " + `<strong>${dataIt.data.format_national}</strong>` + "</span>",
                 c_code: "<span>Country code is " + `<strong>${dataIt.data.country_code}</strong>` + "</span>"
@@ -39,15 +40,16 @@ function Number24() {
         }
     }
     return (
-        <main className="w-full flex flex-col justify-center items-center bg-purple-500 text-gray-50">
-            <h1 className="p-24 text-3xl">Phone Number Validator</h1>
+        <main className="w-full flex flex-col justify-center items-left bg-purple-500 text-gray-50 h-screen" >
+            <h1 className="p-3 text-3xl">Phone Number Validator</h1>
             <form onSubmit={myMethod} className="p-3">
-                <input disabled={mainBool} value={inputValue || ''} onChange={(turn) => setInputValue(turn.target.value)} className="p-3 text-gray-900" type="text" required placeholder="i.e: +12*********" />
+                <input disabled={mainBool} value={inputValue || ''} onChange={(turn) => setInputValue(turn.target.value)} className="p-3 text-gray-900 w-48" type="text" required placeholder="i.e: +12*********" />
                 <button disabled={mainBool} className="p-3 bg-indigo-600">{mainBool ? "Wait" : "Validate"}</button>
             </form>
             <div>{errorIt}</div>
-            <section style={{ padding: "70px 0px 520px 0px" }}>
+            <section>
                 <section className="p-3">
+                    <div dangerouslySetInnerHTML={{ __html: result.is_valid }} />
                     <div dangerouslySetInnerHTML={{ __html: result.country }} />
                     <div dangerouslySetInnerHTML={{ __html: result.i_format }} />
                     <div dangerouslySetInnerHTML={{ __html: result.l_format }} />
@@ -57,7 +59,7 @@ function Number24() {
                 <section className="p-3">
                     <code >
                         <p>Write in International format (+12*********)</p>
-                        <Link href={atob(dataArr.developer)}>Contributer <strong>www.{atob(dataArr.developer).slice(8)}</strong></Link>
+                        <Link href={atob(dataArr.developer)}>Contributer is <strong>{atob(dataArr.developer).slice(8)}</strong></Link>
                         <p>All rights reserved</p>
                         <p>Data is controlled by third party API (Application programming interface).</p>
                     </code>
