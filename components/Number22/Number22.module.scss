@@ -20,6 +20,8 @@ $primery_color: silver;
             input {
                 padding: 16px 20px 16px 20px;
                 border: solid 1px $primery_color;
+                width:200px;
+                margin:auto;
             }
 
             button {
@@ -27,6 +29,8 @@ $primery_color: silver;
                 padding: 15px;
                 background-color: $primery_color;
                 color: whitesmoke;
+                width:200px;
+                margin:auto;
 
                 &:hover {
                     background-color: #333;

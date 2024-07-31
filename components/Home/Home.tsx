@@ -128,6 +128,10 @@ const pL: pL_type[] = [
     {
         title: "Phone Number Validator",
         url: "/phone-number-validator-tool"
+    },
+    {
+        title: "Slider",
+        url: "/slider"
     }
 ]
 

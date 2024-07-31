@@ -8,8 +8,6 @@
 
 #inner_component {
     margin: auto;
-    width: 50%;
-    height: 400px;
     background-color: #f8efef;
     display: flex;
     justify-content: center;
@@ -32,6 +30,8 @@
     flex: 2;
     height: 100%;
     padding: 12px;
+    display:grid;
+    gap:18px;
 }
 
 #inner_component div:nth-child(2) * {
@@ -73,20 +73,26 @@
 }
 
 @media (max-width:765px) {
+  #inner_component div:nth-child(2) h2 {
+      font-size: 25px;
+  }
+  #inner_component div:nth-child(2) p {
+      font-size: 12px;
+      opacity:.7;
+  }
     #inner_component {
         width: 90%;
-        height: 70vh;
+        padding:33px;
         flex-direction: column;
+        gap:12px;
     }
 
     #inner_component div:nth-child(1) {
         width: 100%;
-        height: 100%;
     }
 
     #inner_component div:nth-child(2) {
         width: 100%;
-        height: 100%;
         display: grid;
         place-items: center;
     }

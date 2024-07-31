@@ -1,0 +1,35 @@
+#main_slider {
+    // width: 100%;
+    height: 100vh;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+
+    section {
+        background-color: cadetblue;
+        height: 60vh;
+        display: flex;
+        gap: 13px;
+        justify-content: center;
+        width: 90vw;
+        margin: auto;
+
+        span {
+            background-color: bisque;
+            padding: 13px;
+            transition: 1s;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    p {
+        position: absolute;
+        top: 0;
+        left: 1px;
+        opacity: .7;
+    }
+}
