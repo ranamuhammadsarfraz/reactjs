@@ -37,6 +37,11 @@
 
             h1 {
                 font-size: 26px;
+
+                @media (max-width:979px) {
+                    font-size: 18px;
+
+                }
             }
 
             form {
@@ -50,6 +55,10 @@
                     color: #e4e0e0;
                     background-color: rgb(10, 8, 12);
                     border: solid 1px #383636;
+
+                    @media (max-width:979px) {
+                        font-size: 12px;
+                    }
                 }
 
                 #search_icon {
@@ -93,15 +102,28 @@
                         background-color: white;
                         color: #333;
                     }
+
+                    @media (max-width:979px) {
+                        padding: 3px;
+                        opacity: .9;
+                        font-size: 9px;
+                    }
+                }
+
+
+            }
+        }
+
+        code {
+            font-size: 10px;
+
+            a {
+                &:hover {
+                    background-color: gray;
                 }
             }
         }
 
-        a {
-            &:hover {
-                background-color: gray;
-            }
-        }
     }
 
     #right_div {
@@ -131,6 +153,7 @@
 
             @media(max-width:769px) {
                 width: 90%;
+                font-size: 12px;
             }
         }
     }

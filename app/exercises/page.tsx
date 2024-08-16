@@ -1,7 +1,7 @@
 "use client"
 import styles from "./exercises.module.scss"
 import { useState, useEffect } from "react";
-const webPagetitle: string = "Muscles ecercise finder webtool"
+const webPagetitle: string = "Muscles exercise finder webtool"
 
 function Page() {
     const [loading, setLoading] = useState<any | boolean>(true),
@@ -336,9 +336,11 @@ function Page() {
                     setInputValue("")
                 })
             }
+            window.scrollTo({ top: 0, behavior: 'smooth' })
         }
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         getData()
     }, [])
 
@@ -515,57 +517,6 @@ function Right(props: rightPropsTypes) {
                     </div>
                 )
             })}
-
         </div>
     )
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// https://api-ninjas.com/api/exercises
-
-{/* <button onClick={(e) => props.myMethod(e, "a")}>Abdominals</button>
-                    <button onClick={(e) => props.myMethod(e, "b")}>Abductors</button>
-                    <button onClick={(e) => props.myMethod(e, "c")}>Adductors</button>
-                    <button onClick={(e) => props.myMethod(e, "d")}>Biceps</button>
-                    <button onClick={(e) => props.myMethod(e, "e")}>Calves</button>
-                    <button onClick={(e) => props.myMethod(e, "f")}>Chest</button>
-                    <button onClick={(e) => props.myMethod(e, "g")}>Forearms</button>
-                    <button onClick={(e) => props.myMethod(e, "h")}>Glutes</button>
-                    <button onClick={(e) => props.myMethod(e, "i")}>Hamstrings</button>
-                    <button onClick={(e) => props.myMethod(e, "j")}>Lats</button>
-                    <button onClick={(e) => props.myMethod(e, "k")}>Lower Back</button>
-                    <button onClick={(e) => props.myMethod(e, "l")}>Middle Back</button>
-                    <button onClick={(e) => props.myMethod(e, "m")}>Neck</button>
-                    <button onClick={(e) => props.myMethod(e, "n")}>Quadriceps</button>
-                    <button onClick={(e) => props.myMethod(e, "o")}>Traps</button>
-                    <button onClick={(e) => props.myMethod(e, "p")}>Triceps</button> */}
