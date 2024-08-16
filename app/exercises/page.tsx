@@ -456,6 +456,7 @@ function Left(props: leftPropsTypes) {
                     <code>
                         <a target="_blank" href="https://rmsencode.com">Develop by rmsencode</a>
                         <span> &copy; {new Date().getFullYear()}</span>
+                        <div style={{ display: "none" }}>Application Programming Interface (API) is  by API-NINJAS.COM</div>
                     </code>
                 </div>
             </section>
