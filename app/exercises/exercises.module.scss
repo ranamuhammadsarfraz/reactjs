@@ -1,0 +1,137 @@
+#main_exercises {
+    width: 100%;
+    display: flex;
+    color: rgb(197, 192, 192);
+    background-color: rgb(0, 0, 0);
+    flex-wrap: wrap;
+    transition: 2s;
+
+    * {
+        color: rgb(177, 174, 174);
+    }
+
+    @media(max-width:979px) {
+        flex-direction: column;
+    }
+
+    #left_div {
+        flex: .6;
+        display: grid;
+        place-content: center;
+
+        section {
+            border: solid 1px rgb(61, 59, 59);
+            margin: 12px;
+            width: 300px;
+            position: fixed;
+            display: flex;
+            flex-direction: column;
+            gap: 19px;
+            padding: 12px 22px 12px 12px;
+            border-radius: 15px;
+
+
+            @media (max-width:979px) {
+                position: relative;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            form {
+                position: relative;
+
+                input {
+                    padding: 3px 12px 3px 12px;
+                    width: 100%;
+                    outline: 0;
+                    border-radius: 15px;
+                    color: #e4e0e0;
+                    background-color: rgb(10, 8, 12);
+                    border: solid 1px #383636;
+                }
+
+                #search_icon {
+                    position: absolute;
+                    right: 10px;
+                    top: 6px;
+                    cursor: pointer;
+
+                    div:nth-child(1) {
+                        width: 15px;
+                        height: 15px;
+                        border: solid 1px rgb(160, 160, 160);
+                        border-radius: 50%;
+                    }
+
+                    div:nth-child(2) {
+                        width: 1px;
+                        height: 6px;
+                        background-color: rgb(160, 160, 160);
+                        position: relative;
+                        left: 12px;
+                        transform: rotate(155deg);
+                        bottom: 1px;
+                    }
+                }
+            }
+
+            #btn_div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 12px;
+
+                button {
+                    padding: 8px;
+                    opacity: .8;
+                    border: solid 1px rgb(39, 39, 39);
+
+                    &:hover {
+                        background-color: white;
+                        color: #333;
+                    }
+                }
+            }
+        }
+
+        a {
+            &:hover {
+                background-color: gray;
+            }
+        }
+    }
+
+    #right_div {
+
+        b,
+        h3 {
+            width: 100%;
+            text-align: left;
+        }
+
+        flex: 1;
+        padding: 22px 12px 12px 12px;
+        display: flex;
+        gap: 18px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .each_div {
+            background-color: rgb(10, 8, 12);
+            border-left: solid 1px gray;
+            padding: 12px;
+            display: grid;
+            gap: 12px;
+            width: 80%;
+
+            @media(max-width:769px) {
+                width: 90%;
+            }
+        }
+    }
+}

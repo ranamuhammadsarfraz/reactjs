@@ -132,6 +132,11 @@ const pL: pL_type[] = [
     {
         title: "Slider",
         url: "/slider"
+    },
+    {
+
+        title: "Exercises",
+        url: "/exercises"
     }
 ]
 
