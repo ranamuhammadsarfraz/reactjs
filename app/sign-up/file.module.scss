@@ -1,0 +1,145 @@
+.main_user_style_sheet {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    section {
+        display: flex;
+        width: 70%;
+        margin: auto;
+        height: 70vh;
+        animation: 8s change_side infinite;
+
+        @media (max-width:965px) {
+            flex-direction: column;
+            height: 84vh;
+            width: 92%;
+            animation: none;
+        }
+
+        @keyframes change_side {
+            0% {
+                flex-direction: row;
+            }
+
+            100% {
+                flex-direction: row-reverse;
+            }
+        }
+
+        .first_div {
+            background-color: red;
+            color: rgb(238, 238, 238);
+            flex: 1;
+            border-radius: 10px 0px 0px 10px;
+
+            @media (max-width:965px) {
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 22px;
+        }
+
+        .second_div {
+            flex: 1;
+            background-color: rgb(231, 231, 231);
+            border-radius: 0px 10px 10px 0px;
+
+            @media (max-width:965px) {
+                border-radius: 0px 0px 10px 10px;
+                padding-bottom: 22px;
+            }
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            .create_account {
+                padding: auto;
+                width: 100%;
+                padding: 10px;
+
+            }
+
+            .icon_div {
+                display: flex;
+                justify-content: center;
+                gap: 13px;
+                padding: 10px;
+
+                div {
+                    border: solid 1px rgb(212, 212, 212);
+                    width: 41px;
+                    height: 41px;
+                    border-radius: 50%;
+                    display: grid;
+                    place-items: center;
+                }
+            }
+
+            .form {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                gap: 19px;
+                padding: 10px;
+
+                input {
+                    padding: 9px;
+                    border-radius: 3px;
+                    width: 285px;
+                    background-color: rgb(212, 212, 212);
+
+                    @media (max-width:965px) {
+                        width: 100%
+                    }
+                }
+            }
+        }
+
+        .title {
+            font-size: 39px;
+            font-weight: bolder;
+        }
+
+        .para_graph {
+            width: 80%;
+        }
+
+        .btn,
+        .btn_ {
+            border: solid rgb(238, 238, 238) 1px;
+            padding: 12px 69px 12px 69px;
+            border-radius: 29px;
+            font-size: 15px;
+            font-weight: bolder;
+            width: 201px;
+        }
+
+        .btn_ {
+            border: solid red 1px;
+            background-color: red;
+            color: rgb(238, 238, 238);
+        }
+    }
+
+    .developer_attribute {
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        font-size: 8px;
+    }
+
+}

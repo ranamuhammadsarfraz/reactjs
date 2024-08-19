@@ -137,6 +137,16 @@ const pL: pL_type[] = [
 
         title: "Exercises",
         url: "/exercises"
+    },
+    {
+
+        title: "SignUp",
+        url: "/sign-up"
+    },
+    {
+
+        title: "SignIn",
+        url: "/sign-in"
     }
 ]
 
