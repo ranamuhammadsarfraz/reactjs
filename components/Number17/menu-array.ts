@@ -16,7 +16,7 @@ type menuArrayType = [
 
 const menuArray: menuArrayType = [
     {
-        img: "/gallery/adult-1851571_960_720.jpg",
+        img: "/gallery/gif_first.gif",
         img_source: "https://pixabay.com/users/pexels-2286921/",
         person: "Mr XYZ",
         profession: "Photographer or etc.",

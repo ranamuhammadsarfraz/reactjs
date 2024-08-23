@@ -8,8 +8,14 @@ export default function Number17() {
     return (
         <>
             <main className={styles.main}>
+                <br />
+                <br />
                 <section>
+                    <br />
+                    <br />
                     <div>
+                        <br />
+                        <br />
                         <Image onContextMenu={(e) => e.preventDefault()} src={menuArray[0].img} height={100} width={190} alt="" />
                     </div>
                     <div>

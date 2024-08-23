@@ -1,14 +1,12 @@
 .main {
-    // background-color: #312a2a;
-    background-color:#1b1919;
+    background-color: #1b1919;
     width: 100%;
-    // height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     flex-direction: column;
-    padding: 110px 0px 110px 0px;
+    height: 100vh;
 
     section {
         max-width: 500px;
@@ -26,7 +24,7 @@
         img {
             border-radius: 50%;
             width: 150px;
-            height:150px;
+            height: 150px;
         }
 
         h1 {
@@ -78,7 +76,7 @@
 }
 
 @media (max-width:568px) {
-.main{
-      padding: 0px;
-}
+    .main {
+        padding: 0px;
+    }
 }
