@@ -155,7 +155,8 @@ export default function Home() {
     return (
         <>
             <main id={styles.main}>
-                <h1>Project</h1>
+                <h1>Single page App (SPA) Projects</h1>
+                <Link href={atob(dataArr.developer)}>Developed by {atob(dataArr.developer).slice(8, 17)}</Link>
                 <ul>
                     {pL.map((data, index) => {
                         return (
@@ -165,7 +166,6 @@ export default function Home() {
                         )
                     })}
                 </ul>
-                <Link href={atob(dataArr.developer)}>Developed by {atob(dataArr.developer).slice(8, 17)}</Link>
             </main>
         </>
     )
