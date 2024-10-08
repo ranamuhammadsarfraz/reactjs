@@ -153,11 +153,7 @@ const pL: pL_type[] = [
         title: "Mortage Calculator",
         url: "/mortage-calculator"
     },
-    {
 
-        title: "To Do App",
-        url: "/to-do-app"
-    }
 ]
 
 export default function Home() {
