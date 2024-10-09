@@ -25,10 +25,6 @@ const pL: pL_type[] = [
         url: "/front-end-just/number-6"
     },
     {
-        title: "Check Temperature",
-        url: "/front-end-just/number-7"
-    },
-    {
         title: "Quiz",
         url: "/front-end-just/number-8"
     }
@@ -167,7 +163,7 @@ export default function Home() {
                     {pL.map((data, index) => {
                         return (
                             <li key={index}>
-                                <Link href={data.url}>{data.title}</Link>
+                                <a target="_blank" href={data.url}>{data.title}</a>
                             </li>
                         )
                     })}

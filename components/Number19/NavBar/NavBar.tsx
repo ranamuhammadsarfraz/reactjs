@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function NavBar() {
     return (
         <nav className={styles.nav}>
-            <section>AKASaani</section>
+            <section>AKA Frank</section>
             <ul>
                 <li>
                     <Link href="#">Homepage</Link>

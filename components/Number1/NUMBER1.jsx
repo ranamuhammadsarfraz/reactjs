@@ -12,7 +12,7 @@ export default function Number_1() {
                         <GiPencilBrush />
                     </span>
                     <span>
-                        Pencil
+                        Pen
                     </span>
                 </nav>
                 <div>

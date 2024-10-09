@@ -11,7 +11,7 @@ export default function Footer() {
 
     return (
         <div className={styles.main}>
-            <div><Link href="#">AKASAANI</Link></div>
+            <div><Link href="#">AKA Frank</Link></div>
             <div>
                 {dataArray[3].map((response, index: number) => {
                     return (

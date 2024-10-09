@@ -31,9 +31,9 @@ export default function MortageCalculator() {
           <section>
             <div id="first_div">
               <span>
-                <h1>Mortage Calculator (dummy form)</h1>
+                <h1>Mortage Calculator (fake calculation)</h1>
               </span>
-              <span>Clear All</span>
+              <button>Clear All</button>
             </div>
 
             <div id="second_div">
@@ -50,6 +50,7 @@ export default function MortageCalculator() {
                     onChange={(t) => setMortageAmount(t.target.value)}
                     type="number"
                     required
+                    placeholder="Amount"
                   />
                 </span>
               </div>
@@ -65,6 +66,7 @@ export default function MortageCalculator() {
                       onChange={(t) => setMortageTerm(t.target.value)}
                       type="number"
                       required
+                      placeholder="years"
                     />
                   </span>
                   <span>
@@ -81,6 +83,7 @@ export default function MortageCalculator() {
                       onChange={(t) => setInterestRate(t.target.value)}
                       type="number"
                       required
+                      placeholder="interest rate"
                     />
                   </span>
                   <span>

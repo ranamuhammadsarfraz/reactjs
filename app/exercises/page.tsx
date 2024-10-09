@@ -26,10 +26,12 @@ function Page() {
             setResult(response)
             setLoading(false)
             setExerciseName(queryIs)
+            window.scrollTo(0, 0);
         })
     },
         myMethod = async (e: any, text: string) => {
             e.preventDefault()
+            window.scrollTo(0, 0);
             const inputValue_ = inputValue.toLowerCase()
             if (text == "main") {     //user entered
                 setLoading(true)

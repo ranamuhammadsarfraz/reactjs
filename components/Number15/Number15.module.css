@@ -28,7 +28,6 @@
     cursor: pointer;
     font-size: 11px;
     padding: 11px;
-    border-radius: 8px;
 }
 
 #SecondDiv {
@@ -36,6 +35,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     flex-direction: column;
 }
 
@@ -68,5 +68,11 @@
 
     #SecondDiv #paragraph_div {
         place-items: center;
+        width: 97%;
+        padding-left: 0px;
+    }
+
+    #SecondDiv #paragraph_div p {
+        width: 97%;
     }
 }
